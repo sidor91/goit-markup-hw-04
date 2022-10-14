@@ -236,13 +236,41 @@ body {
     width: calc((100%-90px)/4);
 }
 
+.features-list > .item::before {
+    display: block;
+    height: 120px;
+    content: "";
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    background-color: var(--secondary-background-color);
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+}
+
 .features-list .item:not(:last-child) {
     margin-right: 30px;
 }
 
 .features-title {
     margin-bottom: 10px;
-    
+    margin-top: 30px;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
