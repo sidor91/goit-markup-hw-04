@@ -21,6 +21,7 @@
     --header-background-color:#FFFFFF;
     --hero-background-color:#2F303A;
     --order-button-hover:#188CE8;
+    --social-item-color:#AFB1B8;
 }
 
 h1,
@@ -383,9 +384,10 @@ body {
 .social-item {
     width: 44px;
     height: 44px;
-    padding: 12px;
     display: flex;
     border-radius: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
 .team-social > li:not(:last-child) {
@@ -393,15 +395,17 @@ body {
 }
 
 .social-item .icon {
+    width: 20px;
+    height: 20px;
     fill: #AFB1B8;
 }
 
 .social-item:hover {
-    background-color: #2196F3;
+    background-color: var(--accent-color);
 }
 
 .social-item:hover .icon {
-    fill: #FFFFFF;
+    fill: var(--white-color);
 }
 
 
