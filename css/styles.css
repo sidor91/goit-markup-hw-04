@@ -142,6 +142,9 @@ body {
 
 
 .header-contacts .link {
+    display: flex;
+    align-items: center;
+
     color: var(--header-contacts-color);
     font-weight: 500;
     font-size: 14px;
@@ -154,6 +157,27 @@ body {
 .footer-contacts .link:hover,
 .footer-contacts .link:focus {
     color: var(--accent-color);
+}
+
+.header-contacts .icon {
+    /* width: 16px;
+    height: 12px; */
+    margin-right: 10px;
+    fill: var(--header-contacts-color) 
+}
+
+.envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+}
+
+.header-contacts .link:hover .icon {
+    fill: var(--accent-color);
 }
 
 /* Hero */
