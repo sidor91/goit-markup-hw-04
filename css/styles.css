@@ -22,6 +22,7 @@
     --hero-background-color:#2F303A;
     --order-button-hover:#188CE8;
     --social-item-color:#AFB1B8;
+    --footer-social-background:rgba(255, 255, 255, 0.1);
 }
 
 h1,
@@ -492,7 +493,7 @@ body {
 }
 
 /* Footer */
-
+    
 .footer {
     background-color: var(--hero-background-color);
 }
@@ -500,6 +501,7 @@ body {
 .footer .container {
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
 }
 
 .footer-logo {
@@ -544,6 +546,46 @@ body {
     letter-spacing: 0.03em;
 }
 
+.footer-social {
+    display: block;
+    height: 80px;
+    padding: 0;
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
+.footer-social h3 {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--white-color);
+}
+
+.footer-social .social-item {
+    background-color: var(--footer-social-background);
+    border-radius: 50%;
+}
+
+.footer-social li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social .list {
+    display: flex;
+}
+
+.footer-social .icon {
+    fill: var(--white-color);
+}
+
+.footer-social .social-item:hover {
+    background-color: var(--accent-color);
+}
 
 /* Фільтр */
 
