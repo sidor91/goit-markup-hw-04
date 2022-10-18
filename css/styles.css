@@ -160,8 +160,6 @@ body {
 }
 
 .header-contacts .icon {
-    /* width: 16px;
-    height: 12px; */
     margin-right: 10px;
     fill: var(--header-contacts-color) 
 }
@@ -421,6 +419,77 @@ body {
     fill: var(--white-color);
 }
 
+/* Clients */
+
+.container.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients .section-title {
+    margin-bottom: 50px;
+}
+
+.clients > .list {
+    display: flex;
+}
+
+.clients-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-item .icon {
+    fill: var(--social-item-color);
+}
+
+.clients-item:hover .icon {
+    fill: var(--accent-color);
+}
+
+.clients-item:hover {
+    border-color: var(--accent-color);
+}
+
+.client1 {
+    width: 41px;
+    height: 46.7px;
+}
+
+.client2 {
+    width: 40px;
+    height: 52px;
+}
+
+.client3 {
+    width: 43.46px;
+    height: 41.18px;
+}
+
+.client4 {
+    width: 84.44px;
+    height: 40.62px;
+}
+
+.client5 {
+    width: 62.54px;
+    height: 45.43px;
+}
+
+.client6 {
+    width: 93.79px;
+    height: 43.93px;
+}
 
 /* Footer */
 
@@ -543,7 +612,6 @@ body {
 
 .project-list .item {
     width: ((100%-60px)/3);
-    /* width: 370px; */
     margin-right: 30px;
     margin-bottom: 30px;
 }
