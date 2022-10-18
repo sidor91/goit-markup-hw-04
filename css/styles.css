@@ -233,44 +233,33 @@ body {
     display: flex;
 }
 
-.features-list .item {
+.features-item {
     width: calc((100%-90px)/4);
 }
 
-.features-list > .item::before {
-    display: block;
+.features-item > .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
     height: 120px;
-    content: "";
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
+    margin-bottom: 30px;
     background-color: var(--secondary-background-color);
 }
 
-.icon-antenna::before {
-    background-image: url(../images/antenna.svg);
+.features-item .icon {
+    width: 70px;
+    height: 70px;
 }
 
-.icon-clock::before {
-    background-image: url(../images/clock.svg);
-}
 
-.icon-diagram::before {
-    background-image: url(../images/diagram.svg);
-}
 
-.icon-astronaut::before {
-    background-image: url(../images/astronaut.svg);
-}
-
-.features-list .item:not(:last-child) {
+.features-list .features-item:not(:last-child) {
     margin-right: 30px;
 }
 
 .features-title {
     margin-bottom: 10px;
-    margin-top: 30px;
 
     color: var(--title-text-color);
     font-weight: 700;
@@ -397,7 +386,7 @@ body {
 .social-item .icon {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
+    fill: var(--social-item-color);
 }
 
 .social-item:hover {
