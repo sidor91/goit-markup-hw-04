@@ -145,6 +145,8 @@ body {
 .header-contacts .link {
     display: flex;
     align-items: center;
+    width: 161px;
+    height: 16px;
 
     color: var(--header-contacts-color);
     font-weight: 500;
@@ -163,16 +165,6 @@ body {
 .header-contacts .icon {
     margin-right: 10px;
     fill: var(--header-contacts-color) 
-}
-
-.envelope {
-    width: 16px;
-    height: 12px;
-}
-
-.smartphone {
-    width: 10px;
-    height: 16px;
 }
 
 .header-contacts .link:hover .icon {
@@ -269,13 +261,6 @@ body {
     margin-bottom: 30px;
     background-color: var(--secondary-background-color);
 }
-
-.features-item .icon {
-    width: 70px;
-    height: 70px;
-}
-
-
 
 .features-list .features-item:not(:last-child) {
     margin-right: 30px;
@@ -407,8 +392,6 @@ body {
 }
 
 .social-item .icon {
-    width: 20px;
-    height: 20px;
     fill: var(--social-item-color);
 }
 
@@ -460,36 +443,6 @@ body {
 
 .clients-item:hover {
     border-color: var(--accent-color);
-}
-
-.client1 {
-    width: 41px;
-    height: 46.7px;
-}
-
-.client2 {
-    width: 40px;
-    height: 52px;
-}
-
-.client3 {
-    width: 43.46px;
-    height: 41.18px;
-}
-
-.client4 {
-    width: 84.44px;
-    height: 40.62px;
-}
-
-.client5 {
-    width: 62.54px;
-    height: 45.43px;
-}
-
-.client6 {
-    width: 93.79px;
-    height: 43.93px;
 }
 
 /* Footer */
