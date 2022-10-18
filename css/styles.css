@@ -443,6 +443,7 @@ body {
 
 .clients-item:hover {
     border-color: var(--accent-color);
+    cursor: pointer;
 }
 
 /* Footer */
