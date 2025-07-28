@@ -65,6 +65,7 @@ header {
 	padding: 24px 0;
 	justify-content: space-between;
 	border-bottom: 1px solid var(--cornflower);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -102,6 +103,22 @@ header {
 	font-weight: 500;
 	color: var(--navy-blue);
 	padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-link.current {
+  position: relative;
+}
+
+.header-nav-link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--ocean);
 }
 
 .header-address {
@@ -115,12 +132,14 @@ header {
 
 .contacts-link {
 	color: var(--slate);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover,
 .header-nav-link:focus,
 .contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:focus,
+.header-nav-link.current {
 	color: var(--ocean);
 }
 
