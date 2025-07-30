@@ -315,6 +315,7 @@ header {
 }
 
 .team-social-link:hover,
+.team-social-link:active,
 .team-social-link:focus {
 	background-color: var(--ocean);
 }
@@ -457,6 +458,7 @@ header {
 }
 
 .footer-social-link:hover,
+.footer-social-link:active,
 .footer-social-link:focus {
 	background-color: var(--green);
 }
